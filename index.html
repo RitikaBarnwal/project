@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritka Fitness</title>
+</head>
+<link rel="stylesheet" href="CSS/style.css">
+<style>
+    /* CSS Reset */
+    body{
+        color: white;
+        margin:0px;
+        padding:0px;
+        background: url('IMG/gym.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: top center;
+        
+    }
+    .left{
+        /*border: 2px solid red;*/
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 18px;
+    }
+    .mid{
+        display: block;
+        position: absolute;
+        top: 18px;
+        left:30%;
+        white-space: nowrap;
+        /*width: 33%;
+        margin: 18px auto;
+        border: 2px solid green;*/
+        
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 18px;
+        /*border: 2px solid blue;*/
+        display: inline-block;
+    }
+    .navbar{
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+    .navbar li{
+        display: inline-block;
+        list-style: none;
+        /*font-size: 25px;*/
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        /*display: inline-block;*/
+        margin: 0 10px;
+        font-size: 18px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: grey;
+    }
+    .left IMG{
+         width:23px;
+
+    }
+    .left div{
+        text-align: center;
+    }
+    .btn{
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        /*border: 2px solid grey;*/
+        border-radius: 10px;
+        font-size: 10px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(98, 76, 76);
+    }
+    .container{
+        margin-top: 80px;
+        border: 2px solid white;
+        background-color: black;
+        color: white;
+        padding: 25px 40px;
+        border-radius: 28px;
+        font-size: small;
+        cursor: pointer;
+        width: 50%;
+        height: 360px;
+        margin: 100px 50px;
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 500px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 500px;
+        margin:20px auto;
+    }
+
+</style>
+<body>
+    <header class="header">
+        <!----left box for logo--->
+        <div class="left">
+           <img src="IMG/logo.jpg" alt="">
+           <div>Ritika Fitness</div>
+        </div>
+        <!---mid box for navbar--->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+
+        </div>
+        <!---Right box for button--->
+        <div class="right">
+            <button class="btn">Call Us Now</button><button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+
+        <h1>Join The Best Gym Of Bengaluru Now</h1>
+
+        <form action="noaction.php">
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name"> 
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age"> 
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender"> 
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email id">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone no">
+            </div>
+
+            <button class="btn">Submit</button>
+        
+        </form>
+        
+    </div>
+    
+</body>
+</html>
